@@ -1,1 +1,8 @@
-<p>user-profile works!</p>
+<div>
+<img [src]="photo" alt="name">
+<p>Prénom : {{firstName}}</p>
+<p>Nom : {{name}}</p>
+<p>Âge : {{age}} </p>
+<label for="citation">Ma philosophie : {{quote}} </label>
+<input type="text" id="citation" [(ngModel)]="quote">
+</div>

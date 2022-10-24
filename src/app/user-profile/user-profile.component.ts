@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  name: string;
+  firstName: string;
+  age: number;
+  quote: string;
+  photo: string;
+
+  constructor() { 
+    this.name = "Grid";
+    this.firstName = "Judge";
+    this.age = 39;
+    this.quote = "Bière, métal et DBZ";
+    this.photo = "https://randomuser.me/api/portraits/lego/2.jpg";
+  }
 
   ngOnInit(): void {
   }
 
 }
+
