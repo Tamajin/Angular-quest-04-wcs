@@ -2,7 +2,8 @@
 <img [src]="photo" alt="name">
 <p>Prénom : {{firstName}}</p>
 <p>Nom : {{name}}</p>
-<p>Âge : {{age}} </p>
+<p *ngIf="age!=0">Âge : {{age}} </p>
+<button (click)="hideAge()">Cacher mon âge</button>
 <label for="citation">Ma philosophie : {{quote}} </label>
 <input type="text" id="citation" [(ngModel)]="quote">
 </div>

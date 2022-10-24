@@ -24,5 +24,9 @@ export class UserProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  hideAge() {
+    this.age = 0;
+  }
+
 }
 
